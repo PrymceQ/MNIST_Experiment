@@ -12,7 +12,9 @@ Introduction Experiment of MNIST Dataset
 ## train.py
 
 不带交叉验证的训练文件。直接修改
+
     L102    网络结构（其中为LeNet配置）
+    
     L123    超参数设置
 
 如果遇到GPU内存问题，那是因为在训练过程中在做评价的时候，我们把所有的数据（60000+10000条）都导入了GPU造成的。（这个问题一般不会出现，除非扩大了网络结构）问题出现后涉及代码L75-L80
@@ -24,6 +26,7 @@ Introduction Experiment of MNIST Dataset
    L110-111    模型.pt文件保存路径 `./model_save`
 
 2. train_k折交叉验证.py文件可以进行修改的地方。
+
    L35-48      Net_model   1*28*28 -> 1*10
    
    L93         num_epoches 训练轮数
