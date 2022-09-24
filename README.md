@@ -25,9 +25,13 @@ Introduction Experiment of MNIST Dataset
 
 2. train_k折交叉验证.py文件可以进行修改的地方。
    L35-48      Net_model   1*28*28 -> 1*10
+   
    L93         num_epoches 训练轮数
+   
    L94         optimizer   参数优化方法
+   
    L95         loss_func   计算损失方法，分类用cross entropy loss
+   
    L193        k           k折交叉验证
 
 ## test.py
